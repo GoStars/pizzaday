@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 // const bodyParser = require('body-parser')
 const path = require('path')
 const config = require('./webpack.common.js')
+const apiRouter = require('./api/index.js')
 
 const app = express()
 const compiler = webpack(config)
@@ -31,5 +32,7 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler))
 
 app.use(express.static('public'))
+
+app.use('/api', apiRouter)
 
 app.listen(3000, () => console.log('Listening on port 3000!\n'))
