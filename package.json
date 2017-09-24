@@ -1,0 +1,55 @@
+{
+  "name": "pizzaday",
+  "version": "1.0.0",
+  "description": "Orders management app. Food ordering for group of people.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "server": "node server.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoStars/pizzaday.git"
+  },
+  "keywords": [
+    "Orders",
+    "Management"
+  ],
+  "author": "GoStars",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.3.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-hot-middleware": "^2.19.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.12",
+    "prop-types": "^15.5.10",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "^3.0.0-beta.7"
+  },
+  "bugs": {
+    "url": "https://github.com/GoStars/pizzaday/issues"
+  },
+  "homepage": "https://github.com/GoStars/pizzaday#readme"
+}
