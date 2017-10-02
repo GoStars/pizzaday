@@ -33,3 +33,12 @@ body {
     margin-left: 30%;
     margin-right: 30%;
 }
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.glyphicon {
+    margin-right: 5px;
+}

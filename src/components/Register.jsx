@@ -23,7 +23,7 @@ export class Register extends React.Component {
                     <input className="form-control" name ="" type="password" />
                     <label>Confirm Password: </label>
                     <input className="form-control" name ="" type="password" />
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         )

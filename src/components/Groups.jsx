@@ -28,6 +28,7 @@ export class Groups extends React.Component {
                         <input className="form-control" name="" type="text" />
                         <label>Menu Items: </label>
                         <input className="form-control" name="" type="text" />
+                        <input type="submit" value="Submit" />
                     </form>
                 </div>
             )   

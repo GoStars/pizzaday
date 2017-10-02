@@ -11,10 +11,6 @@ const apiRouter = require('./api/index.js')
 const app = express()
 const compiler = webpack(config)
 
-// load view engine
-app.set('views', path.join(__dirname, 'views')) 
-app.set('view engine', 'pug')
-
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/pizzaday', {
     useMongoClient: true
@@ -23,6 +19,10 @@ mongoose.connect('mongodb://localhost/pizzaday', {
 mongoose.connection.once('open', () => console.log('Connected to MongoDB'))
 // check for db errors
 mongoose.connection.on('error', err => console.log(err))
+
+// load view engine
+app.set('views', path.join(__dirname, 'views')) 
+app.set('view engine', 'pug')
 
 app.use(webpackDevMiddleware(compiler, {
     noInfo: true,
