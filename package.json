@@ -1,13 +1,13 @@
 {
   "name": "pizzaday",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Orders management app. Food ordering for group of people.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "server": "node server.js",
+    "server": "nodemon server.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
