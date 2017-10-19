@@ -4,8 +4,9 @@ let Schema = mongoose.Schema
 
 // user schema
 let userSchema = new Schema({
-    first_name: String,
-    last_name: String
+    username: String,
+    email: String,
+    password: String
 })
 
 // user model

@@ -5,12 +5,17 @@ export const Group = () => {
         <div>
             <h1>Create group</h1>
             <form>
-                <div>
-                    <label>Name</label>
-                    <input type="text" name="name" required />
-                    <label>Image/Logo</label>
-                    <button type="submit">Create</button>
-                </div>
+                <label>Name</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    required 
+                />
+                <label>Image/Logo</label>
+                <button 
+                    type="submit">
+                    Create
+                </button>
             </form>
         </div>
     )
